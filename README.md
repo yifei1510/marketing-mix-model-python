@@ -100,7 +100,8 @@ Five bounded weekly-budget scenarios, each channel capped at 2× its historical 
 | TV Cut | 233,645 | 2,513,632 | −3.04% |
 | 20% Budget Reduction | 208,287 | 2,347,383 | −9.46% |
 
-![Predicted weekly sales across the five budget scenarios](output/charts/budget_scenario_comparison.png)
+<img width="1424" height="785" alt="budget_scenario_comparison" src="https://github.com/user-attachments/assets/c7be89d3-f152-4161-938f-1d937c416cce" />
+
 
 *Digital Focus* and *ROI Reallocation* hold total budget constant; the other two intentionally do not. Marginal analysis at the 100%→200% boundary shows Google Ads with the largest modelled uplift, followed by Instagram.
 
@@ -198,31 +199,36 @@ Audits the untouched source **alongside** the prepared table so source issues st
 
 **1. Source missingness by field**
 
-![Missing-value rate by field in the source data](output/charts/data_missingness.png)
+<img width="1265" height="706" alt="data_missingness" src="https://github.com/user-attachments/assets/78e29c22-d013-4f42-8107-d9de62e28f2a" />
+
 
 Media fields carry substantial source blanks — from ~24% (Instagram, OTT) up to ~38% (Google Ads). Each blank is flagged before any zero-fill, so the treatment stays auditable rather than invisible.
 
 **2. Weekly sales trend**
 
-![Weekly sales over the full 209-week period](output/charts/weekly_sales_trend.png)
+<img width="1584" height="786" alt="weekly_sales_trend" src="https://github.com/user-attachments/assets/61d71f44-6e3c-4fa4-bc78-7c55b2a1b924" />
+
 
 The observed 13-week average moves from roughly 1.35M at the start of the series to roughly 2.57M at the end, with visible seasonal structure. Trend and seasonality must be controlled before any media coefficient is interpreted.
 
 **3. Sales by promotion type**
 
-![Average sales by promotion type](output/charts/promotion_sales_comparison.png)
+<img width="1264" height="706" alt="promotion_sales_comparison" src="https://github.com/user-attachments/assets/ea03701c-c9b1-4efc-beee-9df47243f34c" />
+
 
 Coupons weeks show the highest average sales (~2.39M) and Normal weeks the lowest (~2.24M). These are unadjusted group comparisons, not incremental lift — but they justify keeping promotion as a control.
 
 **4. Channel spend and activity**
 
-![Total spend and active-week rate by channel](output/charts/channel_spend_activity.png)
+<img width="1584" height="786" alt="channel_spend_activity" src="https://github.com/user-attachments/assets/6db995ab-6ca3-423e-a413-8d4d12d21285" />
+
 
 Google Ads and Instagram lead on total spend, but Google Ads is active in only ~62% of weeks versus ~76% for Instagram. Scale and flighting differ across channels, which is exactly why multivariate adjustment is needed.
 
 **5. Correlation heatmap**
 
-![Correlation matrix of sales, competitor spend, and media channels](output/charts/correlation_heatmap.png)
+<img width="1118" height="945" alt="correlation_heatmap" src="https://github.com/user-attachments/assets/cc89bfa3-9e2d-45f5-b414-d7ba111f9899" />
+
 
 No pair exceeds the 0.80 absolute threshold, so severe multicollinearity is not present. Google Ads shows the strongest raw association with sales (0.42) — association only, and plausibly driven by shared seasonality or budget timing.
 
