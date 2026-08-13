@@ -59,7 +59,8 @@ Ten specifications were compared on a chronological 80/20 validation window: one
 
 Applying carryover and diminishing-returns transformations reduced validation RMSE by **~63.6%** versus the raw-media baseline.
 
-![Actual vs predicted sales on the chronological validation window](output/charts/actual_vs_predicted_sales.png)
+<img width="635" height="299" alt="image" src="https://github.com/user-attachments/assets/ae782a1c-11db-4505-b175-a05ca6f5d5e2" />
+
 
 *Actual vs. predicted weekly sales across the held-out validation window.*
 
@@ -79,9 +80,11 @@ Contribution is estimated by zeroing one raw channel at a time and re-scoring th
 
 Instagram and Google Ads dominate absolute contribution because of scale, while Newspaper shows the highest proxy ROI off a small spend base — a classic signal to test rather than to act on directly.
 
-![Estimated sales contribution by channel](output/charts/estimated_channel_contribution.png)
+<img width="1265" height="706" alt="estimated_channel_contribution" src="https://github.com/user-attachments/assets/125f2e41-12a1-4884-bbba-b43513dc9614" />
 
-![Proxy ROI by channel](output/charts/proxy_roi_by_channel.png)
+
+<img width="1265" height="706" alt="proxy_roi_by_channel" src="https://github.com/user-attachments/assets/0817da1a-5030-43b5-9317-ba8a3ecb1fb7" />
+
 
 *Contribution ranks channels by absolute modelled impact; proxy ROI rescales that impact by spend, which reorders the list entirely.*
 
